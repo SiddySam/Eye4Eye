@@ -35,7 +35,7 @@ an agent that retaliates to spam emails (***under construction***)
 ## Installation - Linux (***under construction***)
 Example installation:
 ```bash
-git clone https://github.com/username/project.git
+git clone https://github.com/SiddySam/Eye4Eye.git
 cd project
 pip install -r requirements.txt
 ```
