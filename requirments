@@ -1,7 +1,0 @@
-# First get ollama to host the ai
-curl -fsSL https://ollama.com/install.sh | sh
-# aquire the model - it will read your emails
-ollama pull qwen3:4b
-
-
-

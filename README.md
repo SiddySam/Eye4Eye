@@ -10,6 +10,9 @@ Are you getting unwanted emails and dont want to spend time manually blocking or
 This agent reads your email inbox (or potentially all of your inboxes) and performs actions based on its own discretion.
 If a spam or non business email comes from the mail server, the agent will move that email to the spam or other folders. 
 
+![Current brainstorm flow chart](e4eVisualization.png)
+
+
 ---
 
 ## Functional Requirements 
