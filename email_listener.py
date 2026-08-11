@@ -22,17 +22,21 @@ class Tee:
 
 sys.stdout = Tee(sys.stdout, log_file)
 
-# Your existing program goes here
 
+# Your credentials should be stored in your ~/.bashrc file
 EMAIL = os.getenv("e4eEmail")
 PASSWORD = os.getenv("e4ePass")
+IMAP_SERVER = os.getenv("e4eImap")
 
-mail = imaplib.IMAP4_SSL("imap.gmail.com")
-
+mail = imaplib.IMAP4_SSL(IMAP_SERVER)
 mail.login(EMAIL, PASSWORD)
-
 mail.select("INBOX")
 
+# Swap out models here
+your_model = "qwen3:4b"
+
+# The name of your filter folder (where you want your emails to go)
+my_folder = "filtered"
 
 def move_email(uid, destination):
     # Copy the email to the destination mailbox
@@ -117,7 +121,7 @@ Answer with a single word only, answer 'Yes' if this email feels like its not re
 """
 
     response = ollama.chat(
-        model="qwen3:4b",
+        model= your_model,
         messages=[
             {
                 "role": "user",
@@ -228,7 +232,7 @@ while True:
 
             success = move_email(
                 uid,
-                "filtered"
+                my_folder
             )
 
             if success:
