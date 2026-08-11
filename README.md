@@ -60,11 +60,11 @@ If a spam or non business email comes from the mail server, the agent will move 
    source ~/.bashrc
    ```
 4. In your favorite email client, make a new email folder called 'filtered' -this is where the unwated emails will go
-5. Launch email_listener.py
+5. Launch **email_listener.py**
    ```bash
    python3 email_listener.py
    ```
-6. Monitor for incoming emails (or read email_listener.log) and watch how the Nanny keeps your inbox clean.
+6. Monitor for incoming emails (or read **email_listener.log**) and watch how the Nanny keeps your inbox clean.
 
 ---
 
