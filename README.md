@@ -1,6 +1,6 @@
 ---
 
-# Email Nanny bot - aka eye4ye
+# Email Nanny bot - Codename: eye4eye
 
 ---
 
@@ -33,10 +33,10 @@ If a spam or non business email comes from the mail server, the agent will move 
 ## Requirements
 | Name | Description |
 |------|-------------|
-| Python3 | The language libraries you will need [python](https://www.python.org/downloads/) |
-| Ollama | Hosts the language model [ollama](https://ollama.com/) |
-| Qwen3:4b | The lightweight langauge model you will need [Qwen3:4b](https://ollama.com/library/qwen3.5) |
-| Add more | placeholder |
+| Python3 | The language libraries you will need ---> [Get Python](https://www.python.org/downloads/) |
+| Ollama | Hosts the language model ---> [Get Ollama](https://ollama.com/) |
+| Qwen3:4b | The lightweight langauge model you will need ---> [Get Qwen3:4b](https://ollama.com/library/qwen3.5) |
+
 
 # Linux Setup 
 ***Only working with IMAP imap.gmail.com type addresses***
@@ -59,11 +59,12 @@ If a spam or non business email comes from the mail server, the agent will move 
    ```bash
    source ~/.bashrc
    ```
-3. Make a new email folder called 'filtered' -this is where the unwated emails will go
-4. Launch email_listener.py
+4. In your favorite email client, make a new email folder called 'filtered' -this is where the unwated emails will go
+5. Launch email_listener.py
    ```bash
    python3 email_listener.py
-   ``` 
+   ```
+6. Monitor for incoming emails (or read email_listener.log) and watch how the Nanny keeps your inbox clean.
 
 ---
 
